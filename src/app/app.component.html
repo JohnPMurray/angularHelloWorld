@@ -1,0 +1,16 @@
+<h1>{{header}}</h1>
+<div>{{personalBio}}</div>
+<table>
+        <tr>
+            <td *ngFor = 'let lst of imageList'>
+                <img [src] = 'lst.img'>
+            <td>
+        </tr>
+        <tr>
+            <td *ngFor = 'let lst of imageList'>
+                    <a [href] = 'lst.url'>{{lst.name}}</a>
+            <td>
+        </tr>
+</table>
+<!-- <a [routerLink] = "['/page2']">Page 2</a>
+<router-outlet></router-outlet> -->
